@@ -14,38 +14,111 @@
       <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
+      <section class="card" id="javascript-section">
+        <h2>General Terminal Commands</h2>
+        <ul>
+          <li><strong>ls</strong> shows a list of files and directories on the computer</li>
+          <li><strong>pwd</strong> "print working directory", shows current directory</li>
+          <li><strong>cd 'folder name'</strong> navigates into a folder</li>
+          <li><strong>cd ..</strong> navigates backwards one directory at a time</li>
+          <li><strong>mkdir 'directory name'</strong> creates a directory </li>
+          <li><strong>touch 'file name'</strong> creates a file</li>
+          <li><strong>code .</strong> opens VS code</li>
+        </ul>
+      </section>
+      
+      <section class="card" id="git-section">
+        <h2>Git and Github</h2>
+        <ul>
+          <li><strong>Git</strong> is a version control system that lets you manage and keep track of each version of your project.</li>
+          <ul><li>Git is accessed through the command line. Git commands always start with "git".</li></ul>
+          <li><strong>Github</strong> is a cloud-based hosting service that allows us to keep track of our projects inside repositories that ar e stored remotely. Github makes it easy to collborate with others.</li>
+          <li><strong>Git commands:</strong></li>
+          <ul>
+            <li><strong>git status</strong> checks what branch we are currently on</li>
+            <li><strong>git checkout 'branch-name'</strong>switches branches</li>
+            <li><strong>git checkout -b 'branch-name'</strong> creates a new branch and switches to it</li>
+            <li><strong>git add -A</strong> stages changes made to a file to the working branch </li>
+            <li><strong>git commit -m "text"</strong> commits changes to the repository with a message about the change (the -m flag indicates the message)</li>
+            <li><strong>git pull origin main</strong> updates the local repository</li> 
+            <li><strong>git push origin 'branch-name'</strong> pushes changes to repository </li>
+          </ul>
+          <li>After pushing changes, navigate to the working branch in the repository in your browser. Click on the "pull requests" tab then click the "new pull request" button. The base branch is the branch you want to merge into and the compare branch is you've been working on. Make sure you see a green "able to merge" message with a check mark. Click the "create pull request" button. Give the PR a title and short description about the changes you made. Click the "create pull request" button, then the "merge pull request" button and confirm.</li>
+          <li>Always update the local repository after making changes and before starting new changes. </li>
+          
+        </ul>
+      </section>
 
       <section class="card" id="html-section">
-        <h2>HTML</h2>
+        <h2>Hypertext Markup Language (HTML)</h2>
         <ul>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user.</li>
+          <li><strong>HTML</strong> provides the structure of a webpage.</li>
+          <li><strong>Elements</strong> are types of content on a webpage such as text, images, headers, and lists.</li>
+          <li>HTML attributes define additional information about an element. HTML attributes are always defined the beginning element, never the closing element.</li>
+          <li>The <strong>head</strong> element contains information, also known as <strong>metadata</strong>, about the webpage.</li>
+          <li>The <strong>body</strong> element represents the visible content shown to the user.</li>
         </ul>
       </section>
    
       <section class="card" id="css-section">
-        <h2>CSS</h2>
+        <h2>Cascading Style Sheets (CSS)</h2>
         <ul>
-          <li>A margin indicates how much space we want around the outside of an element.</li>
-          <li>A padding indicates how much space we want around the content inside an element.</li>
-          <li>The box-shadow CSS property adds shadow effects around an element's frame.</li>
-        </ul>
-      </section>
-   
-      <section class="card" id="git-section">
-        <h2>Git</h2>
-        <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout branch-name: switches branches</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li><strong>CSS</strong> is used to define how webpage content is presented such as colors, aesthetics, visual layout, and organization.</li>
+          <li>There are ways to use CSS: inline CSS, internal CSS style sheet, and external CSS style sheet.</li>
+            <ul>
+              <li><strong>Inline CSS</strong> is used to style an element directly in the HTML file. Inline styles are useful for quick and permanent changes but are less flexible than external and internal style sheets.</li>
+              <li><strong>Internal style sheets</strong> contain CSS rules for the webpage in the head section of the HTML file.</li>
+              <li><strong>External style sheets</strong> are separate files that contain CSS rules that are then linked to the HTML file. This is the most common method of using CSS because it's easier to make design changes. The link element is placed in the head of the HTML file.</li>
+            </ul>
+          <li>A CSS rule contains two parts: a selector and a declaration block.</li>
+            <ul>
+              <li> A <strong>selector</strong> determines what part of the webpage you want the CSS rule to apply to.</li>
+              <li> A <strong>declaration block</strong> is made up of one or more <strong>declarations</strong>. Each declaration has two parts: the CSS property we want to apply and the value of the property.</li>
+            </ul>
+          <li>A <strong>class attribute</strong> is a type of selector that allows us to choose what which HTML elements we want the CSS rule to apply to.</li>
+          <li>A <strong>margin property</strong> indicates how much space we want around the outside of an element.</li>
+          <li>A <strong>padding property</strong> indicates how much space we want around the content inside an element.</li>
+          <li>A <strong>border property</strong> places a border around our element and indicates how thick and what color it should be.</li>
+          <li>A <strong>box-shadow property</strong> adds shadow effects around an element's frame.</li>
         </ul>
       </section>
    
       <section class="card" id="javascript-section">
-        <h2>JavaScript</h2>
+        <h2>JavaScript (JS)</h2>
         <ul>
-          <li>A variable is a named container that allows us to store data in our code.</li>
-          <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li><strong>JavaScript</strong> adds user interactivity to a webpage.</li>
+          <li>Without JavaScript a webpage is known as <strong>static</strong>.</li>
+          <li>A <strong>variable (var)</strong> is a named container that allows us to store data in our code. Variable names must be unique because it is how we will reference the information stored in the variable in our code.</li>
+          <li><strong>'='</strong> is an <strong>assignment operator</strong> used to assign the specific data that we want stored in our vairable.</li>
+          <li>A <strong>string</strong> is a list of variables surrounded by quotation marks.</li>
+          <li>Every line of JavaScript ends with a semicolon.</li>
+          <li>The <strong>console</strong> is a test environment that developers use to check their code.</li>
+          <li>A <strong>method</strong> is a set of instructions that can be executed by a computer.</li>
+            <ul>
+              <li>The 'console.log()' method outputs a message to the web console.</li>
+            </ul>
+          <li>.js files are linked in the body of a HTML file (as opposed to .css files which are linked in the head).</li>
+          <li>Chrome DevTools is a type of web console used in Google Chome. To open it, either right click and click 'inspect' or use Command+Option+I on MacOS or Control+Shift+I on Windows.</li>
+          <li><strong>Method</strong> is the order in which a computer executes code in a script. In JavaScript, code runs from the top of the page to the bottom.</li>
+          <li><strong>Conditional statements</strong> and <strong>loops</strong> are used to control the order in which code is executed, or if it's even executed at all.</li>
+            <ul>
+              <li><strong>If statments</strong> are a way of introduing decision making into our code. The code will only execute if the if statement meets a condition or is true.</li>
+              <li>A value is considered <strong>falsy</strong> if it is one of the following values: 0, -0, On, "", null, undefined, Nan, or a Boolean data type with the value of false.</li>
+              <li>A value is considered <strong>truthy</strong> if it is not falsy.</li>
+              <li><strong>Else if</strong> is used if there is more than one condition.</li>
+            </ul>
+          <li><strong>'==='</strong> is the <strong>strict equality operator</strong>, it is used to check to see if two values are equal.</li> 
+          <li>An <strong>array</strong> is a single variable that is used to hold a group of related data.</li> 
+          <li>An <strong>index</strong> is a unique number used to tell the location of an item inside an array. The first item is assigned 0 and it counts up from there.</li>
+          <li>A <strong>for loop</strong> uses the predictable pattern of indices in an array to perform a task on al lthe items in an array.</li>
+            <ul>
+              <li>A for loops contains three statements:</li>
+              <li>The first statement determines a starting point for our loop. If we want to start at the beginning then we declare a variable x and give it a value of 0.</li>
+              <li>The second statement is a condition that determines when the loop to end.</li>
+              <li>The third statement is what allow the array to iterate over each item. We usually want the code to loop for every item so the index will increase by 1 each time. The code x++ is a shortcut way of writing x+1.</li>
+              <li>An example of a for loop: for(var x=0; x<'var name'.length; x++) {console.log('var name'[x]);}</li>
+            </ul>
+          <li>A <strong>function</strong> is a set of isntructions that tells the computer how to perform a certain task. A function's name is always followed by parentheses.</li>
         </ul>
       </section>
 
